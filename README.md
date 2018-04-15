@@ -27,7 +27,7 @@
 class NySentences(object):
 	def __init__(self, dirname)
 		self.dirname  =  dirname
-	
+
 	def __iter__(self):
 		for fname in os.listdir(self, dirname):
 		for line in open(os.path.join(self.dirname, fname)):
@@ -53,3 +53,8 @@ from gensim.model.doc2vec import LabeledSentence
 sentence = LabeledSentence(words = [u'some', u'words', u'here], tags=[u'SENT_1'])
 ```
 
+准备好训练数据，模型的训练只是一行命令
+```
+  from gensim.models import Doc2vec
+  model   =   Doc2Vec(dm = 1,  size = 100, window = 5, negative = 5, hs = 0, min_count = 2, workers = 4)
+```

@@ -21,9 +21,9 @@ def tokenization(filename):
 
 
 ##选取两篇相同房源的内容， 选择一个不一样的内容
-filenames = ['/Users/yun/PrivateSpace/Noonde-Script/docs/airbnb.txt',
-            '/Users/yun/PrivateSpace/Noonde-Script/docs/xiaozhu.txt',
-            '/Users/yun/PrivateSpace/Noonde-Script/docs/mayi.txt'
+filenames = ['/Users/yun/PrivateSpace/Noonde-Script/docs/agoda.txt',
+            '/Users/yun/PrivateSpace/Noonde-Script/docs/booking.txt',
+            '/Users/yun/PrivateSpace/Noonde-Script/docs/ctrip.txt'
             ]
 
 ##建立词袋模型  Bag-of-words  描述文档中单词出现的文本的一种表示形式
